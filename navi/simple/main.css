@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+a {
+    color: #383838;
+}
+
+a:link{
+    color: #383838;
+}
+
+a:visited {
+    color: #383838;    
+}
+
+a:hover{
+    color: #3981FF;
+}
+
+a:active {
+    color: #383838;
+}
+
+.nav ul {
+    float: right;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    padding-right: 96px;
+}
