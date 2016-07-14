@@ -64,6 +64,13 @@ header {
     height: 1px;
     bottom: 0;
 }
+.nav_right > ul > li > ul {
+    display: none;
+}
+
+.nav_right > ul > li:hover > ul {
+    display: block;
+}
 
 .sub_nav {
     position: absolute;
