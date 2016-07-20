@@ -3,11 +3,122 @@
     <head>
         <meta charset="utf-8">
         <title>Potato'Blog</title>
-        <link rel="stylesheet" href="mian.scss" media="main" title="no title" charset="utf-8" >
-        <link rel="stylesheet" href="pad.scss" media="pad" title="no title" charset="utf-8" >
-        <link rel="stylesheet" href="phone.scss" media="phone" title="no title" charset="utf-8" >
+        <link rel="stylesheet" href="main.scss" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
-        待续~ XD
+        <!-- 此处是头部和导航 -->
+        <header>
+            <!-- nav_logo 包括网页的头部，logo、主标副标、移动端的展开收起菜单的按钮 -->
+            <div class="nav_logo">
+                <!-- nav_logo_left 包含 logo、主标副标，左对齐 -->
+                <div class="nav_logo_left">
+                    <!-- .logo_img 建立一个空的块，使用 background-image 来嵌入logo图片并且控制尺寸，
+                    此处图片需要使用 @2x 尺寸 -->
+                    <div class="logo_img"></div>
+                    <h2>土豆的博客</h2>
+                    <p>
+                        专业产品狗 / 被动的UI设计师 / 交互设计 / 半个前端工程师
+                    </p>
+                </div>
+                <!-- nav_btm_right 包含上下居中，整体考有浮动的菜单展开合上按钮，这部分在pc上不需要显示 -->
+                <div class="nav_btm_right">
+                    <!-- 这是一个按钮，上下居中，尺寸按照不同设备显示，边框，背景图片显示按钮 -->
+                    <div class="nav_btm"></div>
+                </div>
+            </div>
+            <!-- nav_muen 是展开收起的导航菜单，在移动设备中展开收起，在其他设备中显示在别的地方 -->
+            <div class="nav_muen">
+                <!-- search_Box 这里面是一个搜素框 -->
+                <div class="search_Box">
+                    <input type="search" name="name" value="" placeholder="搜素...">
+                </div>
+                <!-- nav_muen_list 里面是菜单列表，菜单标题和菜单列表 -->
+                <div class="nav_muen_list">
+                    <!-- 最近文章列表 -->
+                    <div class="muen_lastPost">
+                        <h4>近期文章</h4>
+                        <ul>
+                            <li><a href="#">Golang 学习笔记 01</a></li>
+                        </ul>
+                    </div>
+                    <!-- 最近评论列表 -->
+                    <div class="muen_lastComment">
+                        <h4>最近评论</h4>
+                        <ul>
+                            <!-- <li><a href="#">Golang 学习笔记 01</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- 文章归档列表 -->
+                    <div class="muen_postFiling">
+                        <h4>文章归档</h4>
+                        <ul>
+                            <li><a href="#">2016年七月</a></li>
+                        </ul>
+                    </div>
+                    <!-- 分类目录列表 -->
+                    <div class="muen_classify">
+                        <h4>分类目录</h4>
+                        <ul>
+                            <li><a href="#">Go学习笔记</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_muen_future">
+                    <h4>功能</h4>
+                    <ul>
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">文章RSS</a></li>
+                        <li><a href="#">评论RSS</a></li>
+                        <li><a href="#">WordPress.org</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- 此处是正文内容 -->
+        <section>
+            <div class="postPage">
+                <article class="post">
+                    <h2>Golang 学习笔记 01</h2>
+                    <p>
+                        go语言由包构成
+                        Go 语言是由『包』构成的，package main 创建一个叫做『main』的包。一个包可以引入其他的包，如上述实例中的import "fmt",在『main』包中引入了『fmt』的包。引入后，可以在函数体中调用这个包中的函数。
+                        fmt 是一个go语言自带的包
+                        package main
+
+                        import "fmt"
+
+                        func main() {
+                            i := 1
+                            var c int
+                            fmt.Println(i + c)
+                        }
+                        包的入口函数
+                        func main(){……}是这个包的入口主函数，使用这个包从这个主函数调用开始。
+                        变量的定义
+                        var i int
+                        a := 100
+                        b = a + i
+                        在go语言中，一般用var v type的形式来声明变量，在函数内可以用简化的方式v := value的方式来声明
+                    </p>
+                </article>
+            </div>
+            <div class="postFoot">
+                <p>
+                    发布于
+                    <span class="postDate">2016年7月18日</span> 于Golang 学习笔记 01 <span class="createComment">留下评论</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- 此处是footer -->
+        <footer>
+            <div class="footer">
+                <p>
+                    © 2016 土豆 未婚 ...⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄....
+                </p>
+            </div>
+
+        </footer>
     </body>
 </html>
