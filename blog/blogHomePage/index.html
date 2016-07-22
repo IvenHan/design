@@ -28,7 +28,20 @@
                 <!-- nav_btm_right 包含上下居中，整体考有浮动的菜单展开合上按钮，这部分在pc上不需要显示 -->
                 <div class="nav_btm_right">
                     <!-- 这是一个按钮，上下居中，尺寸按照不同设备显示，边框，背景图片显示按钮 -->
-                    <div class="nav_btm"></div>
+                    <div class="nav_btm" onclick="hideMuen('nav_muen')"></div>
+                    <!-- 下面的js用来控制点击菜单按钮展开收起导航菜单：
+                        收起的时候点击：展开菜单，按钮图标变成关闭；
+                        展开的时候点击：收起菜单，按钮图标变成展开； -->
+                    <script type="text/javascript">
+                        function displayMuen(){
+                            var subMuem = getElementsByClassName(obj)
+                            subMuem.style.display = "block";
+                        }
+                        function hideMuen(obj){
+                            var subMuem = getElementsByClassName(obj)
+                            subMuem.style.display = "none";
+                        }
+                    </script>
                 </div>
             </div>
             <!-- nav_muen 是展开收起的导航菜单，在移动设备中展开收起，在其他设备中显示在别的地方 -->
@@ -50,7 +63,7 @@
                     <div class="muen_lastComment">
                         <h4>最近评论</h4>
                         <ul>
-                            <!-- <li><a href="#">Golang 学习笔记 01</a></li> -->
+                            <li><a href="#"> </a></li>
                         </ul>
                     </div>
                     <!-- 文章归档列表 -->
@@ -67,15 +80,15 @@
                             <li><a href="#">Go学习笔记</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="nav_muen_future">
-                    <h4>功能</h4>
-                    <ul>
-                        <li><a href="#">登录</a></li>
-                        <li><a href="#">文章RSS</a></li>
-                        <li><a href="#">评论RSS</a></li>
-                        <li><a href="#">WordPress.org</a></li>
-                    </ul>
+                    <div class="nav_muen_future">
+                        <h4>功能</h4>
+                        <ul>
+                            <li><a href="#">登录</a></li>
+                            <li><a href="#">文章RSS</a></li>
+                            <li><a href="#">评论RSS</a></li>
+                            <li><a href="#">WordPress.org</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
