@@ -1,4 +1,4 @@
-@media (min-width:601px){
+@media (min-width:961px){
     * {
         padding: 0;
         margin: 0;
@@ -10,12 +10,22 @@
         min-width: 400px;
     }
 
+    header {
+        float: left;
+        background:#ffffff;
+        border:1px solid #e5e5e5;
+        box-shadow:0px 2px 4px 0px rgba(0,0,0,0.10);
+        width:378px;
+        height:auto;
+    }
+
     .nav_logo {
         background:#ffffff;
         border-bottom:1px solid #e5e5e5;
         width: auto;
         height:120px;
         padding: 40px;
+
     }
 
     .logo_img {
@@ -53,19 +63,23 @@
     }
 
     .nav_box {
-        margin: 1px auto;
-        padding: 0 50px;
+        // margin: 1px auto;
+        // padding: 0 50px;
     }
 
     .nav_muen {
+        // background:#ffffff;
+        // width: auto;
+        // max-width: 800px;
+        // height:auto;
+        // padding: 40px 40px 10px 40px;
+        // margin: 50px auto;
+        // border:1px solid #e5e5e5;
+        // box-shadow:0px 2px 4px 0px rgba(0,0,0,0.10);
         background:#ffffff;
-        width: auto;
-        max-width: 800px;
+        width:auto;
         height:auto;
         padding: 40px 40px 10px 40px;
-        margin: 50px auto;
-        border:1px solid #e5e5e5;
-        box-shadow:0px 2px 4px 0px rgba(0,0,0,0.10);
     }
 
     .search_Box {
