@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(function(){
+            $(".hide").click(function(){
+                $(".con").toggle(200);
+            });
+            $(".show").click(function(){
+                $(".con").show(200);
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <button class="hide">hide</button>
+    <button class="show">show</button>
+    <div class="con">
+    <h1 class="title">hello</h1>
+    <p class="ppp">
+        hahhahahahahah,hahahh
+    </p>
+    </div>
+    <div class="fuck">
+        <h1 class="hhh1">fuck</h1>
+        <p class="ppp1">
+            hahahahahhah
+        </p>
+        <script>
+            $(function(){
+                $(".hhh1").click(function(){
+                    $(".ppp1").slideToggle("fast");
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
