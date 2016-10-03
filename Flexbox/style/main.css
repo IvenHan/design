@@ -83,6 +83,73 @@ h1,h2,h3,h4,h5,h6,p {
 
 
 .container {
-    padding-top: 60px;
-    display: none;
+    padding-top: 68px;
+    display: block;
+    background-color: #EEEEEE;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.page {
+    background:#ffffff;
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius:2px;
+    width:100%;
+    height:583px;
+    margin-bottom: 20px;
+}
+
+.pageHead {
+    background:#eef6ff;
+    width:100%;
+    height:166px;
+    text-align: center;
+    padding-top: 47px;
+}
+
+.cardTitle {
+    font-family:PingFangSC-Regular;
+    font-size:22px;
+    color:#666666;
+    letter-spacing:0px;
+}
+
+.cardSubscribe {
+    font-family:PingFangSC-Regular;
+    font-size:14px;
+    color:#999999;
+    letter-spacing:0px;
+    text-align:center;
+    margin-top: 17px;
+}
+
+.foot {
+    background:#689ede;
+    border:1px solid #689ede;
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.20);
+    width:100%;
+    height:56px;
+    padding-top: 16px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.foot p {
+    font-family:PingFangSC-Regular;
+    font-size:18px;
+    color:#ffffff;
+    letter-spacing:0px;
+    text-align:center;
+}
+
+.profileImg {
+    background:#ffffff;
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.10);
+    width:89px;
+    height:89px;
+    border-radius:100%;
+    margin-top: -35px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -8,8 +8,16 @@ $(document).ready(function() {
 function para() {
     var navTitleBar = $('.navTitleBar');
     var navTitleBtn =  $('.navTitleBtn');
+    $('.navList').hide();
     navTitleBtn.click(function () {
         console.log('fff');
+        if (navStatus==1) {
+            $('.navList').show();
+            navStatus = navStatus * -1;
+        }else {
+            $('.navList').hide();
+            navStatus = navStatus * -1;
+        }
 
     });
         // 判断导导航状态(如果收起){
@@ -25,4 +33,3 @@ function para() {
         //     按钮变成 三 瞬间
         //     状态标示为收起
 }
-
