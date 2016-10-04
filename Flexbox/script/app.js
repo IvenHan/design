@@ -7,29 +7,29 @@ $(document).ready(function() {
 
 function para() {
     var navTitleBar = $('.navTitleBar');
-    var navTitleBtn =  $('.navTitleBtn');
+    var navTitleBtn = $('.navTitleBtn');
     $('.navList').hide();
-    navTitleBtn.click(function () {
+    navTitleBtn.click(function() {
         console.log('fff');
-        if (navStatus==1) {
+        if (navStatus == 1) {
             $('.navList').show();
             navStatus = navStatus * -1;
-        }else {
+        } else {
             $('.navList').hide();
             navStatus = navStatus * -1;
         }
 
     });
-        // 判断导导航状态(如果收起){
-        //     设置导航渐变背景渐变黑色 200ms
-        //     设置导航文字渐变白色 200ms
-        //     下滑显示菜单 200ms
-        //     按钮变成 X 瞬间
-        //     状态标示为展开
-        // }否则{
-        //     设置导航渐变背景渐变白色 200ms
-        //     设置导航文字渐变黑色 200ms
-        //     上滑收起菜单 200ms
-        //     按钮变成 三 瞬间
-        //     状态标示为收起
+    // 判断导导航状态(如果收起){
+    //     设置导航渐变背景渐变黑色 200ms
+    //     设置导航文字渐变白色 200ms
+    //     下滑显示菜单 200ms
+    //     按钮变成 X 瞬间
+    //     状态标示为展开
+    // }否则{
+    //     设置导航渐变背景渐变白色 200ms
+    //     设置导航文字渐变黑色 200ms
+    //     上滑收起菜单 200ms
+    //     按钮变成 三 瞬间
+    //     状态标示为收起
 }
